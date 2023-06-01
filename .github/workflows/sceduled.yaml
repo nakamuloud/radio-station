@@ -4,6 +4,8 @@ on:
   push:
 jobs:
   scehduled-recording:
+    permissions:
+      tokens: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
