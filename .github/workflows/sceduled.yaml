@@ -1,0 +1,12 @@
+name: Scheduled Recording
+on:
+  workflow_dispatch:
+jobs:
+  scehduled-recording:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          workload_identity_provider: ${{ secrets.WIP }}
+          service_account: ${{ secrets.UPLOAD_SA }}
