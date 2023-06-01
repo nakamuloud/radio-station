@@ -5,7 +5,7 @@ on:
 jobs:
   scehduled-recording:
     permissions:
-      tokens: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
